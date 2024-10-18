@@ -1,5 +1,292 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: "Mulish", sans-serif;
+}
+
+/* Barra Superior */
+
+body {
+    background-color: #9BDEED;
+}
+
+.barra-superior {
+    top: 0;
+    background-color: #36bddb;
+    z-index: 3;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+/* Presentación */
+
+.cont-prest {
+    margin-top: 65px;
+    height: 590px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blur {
+    position: absolute;
+    height: 590px;
+    background-color: rgba(19, 45, 52, 0.5);
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.cont-txt {
+    position: relative;
+    z-index: 1;
+}
+
+.txt-tittle {
+    font-family: "Noto Serif Toto", serif;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.txt-frase {
+    margin-top: -30px;
+}
+
+.txt-since {
+    font-family: "Noto Serif Toto", serif;
+    font-weight: 700;
+}
+
+/* Quiénes Somos */
+
+.cont-quienes-somos {
+    height: 650px;
+    padding-top: 70px;
+    margin-top: -35px;
+    z-index: 2;
+    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #9BDEED;
+}
+
+.txt-contacto,
+.txt-valor,
+.txt-productos,
+.txt-quienes {
+    font-family: "Noto Serif Toto", serif;
+    font-weight: 700;
+    color: #368196;
+    font-size: 50px;
+    text-shadow: 4px -3px 0px white;
+}
+
+.txt-quienes {
+    margin-right: 150px;
+    margin-bottom: -190px;
+}
+
+.cont-img-somos {
+    width: 600px;
+    height: 600px;
+    margin-top: 90px;
+    border-top-right-radius: 250px;
+    overflow: hidden;
+    z-index: 1;
+    object-position: center;
+}
+
+.img-somos {
+    width: 600px;
+}
+
+.blur-somos {
+    margin-top: 90px;
+    width: 600px;
+    height: 600px;
+    border-top-right-radius: 250px;
+    position: absolute;
+    background-color: rgba(19, 45, 52, 0.5);
+    z-index: 2;
+}
+
+.cont-img-somos-logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+    margin-left: -200px;
+    object-position: center;
+}
+
+.img-somos-logo {
+    width: 250px;
+}
+
+.txt-somos {
+    width: 40%;
+    margin-right: 50px;
+    color: rgba(19, 45, 52);
+    margin-bottom: -90px;
+}
+
+/* Productos */
+
+.cont-productos {
+    height: 650px;
+    padding-top: 70px;
+    margin-top: -20px;
+    z-index: 2;
+    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #368196;
+}
+
+.txt-productos {
+    color: white;
+    text-shadow: 4px -3px 0px rgb(155, 222, 237, 0.5);
+}
+
+.tarjeta {
+    background-color: rgba(155, 222, 237, 0.15);
+    width: 250px;
+    height: 350px;
+}
+
+.cont-img{
+    height: 160px;
+}
+
+.foto {
+    width: 200px;
+    height: 120px;
+    transform: rotate(10deg);
+    transition: transform 0.5s ease, scale 0.5s ease; 
+}
+
+.tarjeta:hover .foto {
+    transform: scale(1.1) rotate(20deg) scaleY(1.30);
+}
+
+.desc {
+    font-size: 17px;
+    height: 80px;
+}
+
+.btn-car{
+    height: 25px;
+    border: none;
+}
+
+.btn-car:hover .icon-car{
+    transform: scale(1.3);
+}
+
+.icon-car {
+    width: 25px;
+    transition: all 0.5s ease;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    height: 331px;
+    width: 90px;
+    background-color: rgba(155, 222, 237, 0.15);
+    transition: all 0.5s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(155, 222, 237, 0.25);
+}
+
+.height-max-ofe {
+    height: 350px;
+    margin-top: 185px;
+}
+
+.mt-menor{
+    margin-top: -300px;
+}
+
+/* Valores */
+
+.cont-valor {
+    height: 700px;
+    padding-top: 70px;
+    margin-top: -30px;
+    z-index: 2;
+    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #9BDEED;
+}
+
+/* Tabla */
+
+.table{
+    width: 1300px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(54, 129, 150, 0.99) !important;
+}
+
+.f-size{
+    font-size: 17px;
+}
+
+.t-table{
+    font-size: 20px;
+}
+
+table.table tbody tr th,
+table.table thead tr th,
+table.table tbody tr td {
+    background-color: rgba(54, 129, 150, 0.0) !important;
+}
+
+/* Contacto */
+
+.cont-contacto {
+    height: 350px;
+    padding-top: 70px;
+    margin-top: -20px;
+    z-index: 2;
+    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #368196;
+}
+
+.txt-contacto {
+    color: white;
+    text-shadow: 4px -3px 0px rgb(155, 222, 237, 0.5);
+}
+
+.txt-insta,
+.txt-cel{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.txt-insta:hover,
+.txt-cel:hover{
+    transform: scale(1.1);
+}
+
+.icon-contacto{
+    width: 40px;
 }
