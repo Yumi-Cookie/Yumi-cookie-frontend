@@ -168,14 +168,14 @@ body {
 }
 
 .foto {
-    width: 200px;
-    height: 120px;
-    transform: rotate(10deg);
+    width: 250px;
+    height: 250px;
+    transform: rotate(0deg);
     transition: transform 0.5s ease, scale 0.5s ease; 
 }
 
 .tarjeta:hover .foto {
-    transform: scale(1.1) rotate(20deg) scaleY(1.30);
+    transform: scale(1.1) rotate(-10deg) scaleX(1.10);
 }
 
 .desc {
